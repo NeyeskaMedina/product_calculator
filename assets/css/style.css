@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid-target{
+    display: grid;
+    grid-template-areas: 
+    "card card"
+    "cal cal";
+}
+.flex-card{
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 75vh;
+}
+.sup-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3vh;
+    width: 100%;
+    height: 60%;
+}
+.sup-element h3{
+    margin: 0;
+    padding-top: 2vh;
+}
+.inf-element{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+}
+.inf-element input{
+    height: 5vh;
+    margin-bottom: 2vh;
+    background-color: rgb(202, 202, 215);
+    border-radius: .5em;
+}
+.inf-element h3{
+    margin: 0;
+}
+.buttom-style{
+    width: 30%;
+}
+.flex-calculator{
+    grid-area: cal;
+    width: 100vw;
+    height: 22vh;
+}
+.container-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 202, 215);
+}
+.container-calculator h3{
+    margin: 0;
+    margin-bottom: 3vh;
+    margin-right: 2vw;
+    padding-left: 15vw;
+    color: rgb(86, 86, 86);
+}
+.colors-box{
+    display: flex;
+    align-content: center;
+}
+.colors-box .colors{
+    position: absolute;
+    top: 88vh;
+    left: 27vw;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;  
+}
+@media (min-width:576px){
+    .grid-target{
+        grid-template-areas: 
+        "card cal"
+        "card cal";
+    }
+    .flex-card{
+        width: 60vw;
+        height: 100vh;
+    }
+    .flex-calculator{
+        display: flex;
+        width: 40vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-calculator{
+        width: 80%;
+        height: 25%;
+    }
+    .container-calculator h3{
+        padding-left: 5vw;
+    }
+    .colors-box .colors{
+        top: 52vh;
+        left: 76vw;
+    }
+}

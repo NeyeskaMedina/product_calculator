@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="grid-target">
+        <section class="flex-card">
+            <div class="sup-element">
+                <img src="assets/img/monitor_curvo.jpg" 
+                alt=""
+                width="70%"
+                height="80%">
+                <h3>Monitor samsung curvo ultra ancho 34"</h3>
+            </div>
+            <form class="inf-element">
+                <input 
+                    type="text" 
+                    placeholder="Cantidad" 
+                    id="iQuantity"
+                    required
+                >
+                <input 
+                    type="text"
+                    placeholder="Color" 
+                    id="iColor"
+                    required
+                    >
+                <h3>Precio: <span id="sPrice">785.999</span> CLP </h3>
+                <input 
+                class="button-calculate" 
+                type="button" 
+                value="Calcular Total" 
+                id="iCalcula"
+                >
+            </form>
+        </section>
+        <section class="flex-calculator">
+            <div class="container-calculator">
+                <h3>Total: <span id="sTotaled"></span></h3>
+                <h3>Cantidad: <span id="sQuantity"></span> </h3>
+                <div class="colors-box">
+                    <h3>Color: </h3>
+                    <div class="colors" id="iColors"></div> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
